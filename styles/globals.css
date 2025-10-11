@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-600: #0A63D8;
+  --brand-700: #084FB0;
+  --brand-800: #073D8A;
+  --accent: #0EA5E9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-700 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-gray-900;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2;
+  }
+}

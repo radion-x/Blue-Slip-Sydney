@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blueslipsydney.com.au/sitemap.xml
