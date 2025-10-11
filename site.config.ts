@@ -34,7 +34,7 @@ export const SITE = {
   HOURS_FULL: 'Monday to Friday 7:00 am–5:30 pm; Saturday 7:00 am–2:00 pm; Sunday closed',
   
   // Pricing (update this!)
-  PRICE_FROM: '<REPLACE_PRICE>',
+  PRICE_FROM: '69',
   
   // Schema.org coordinates (approximate St Peters location)
   GEO_LAT: '-33.9146',

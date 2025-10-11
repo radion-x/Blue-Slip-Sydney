@@ -98,9 +98,9 @@ export default function HomePage() {
               >
                 <a href={SITE.PHONE_LINK} className="group">
                   <Button
-                    variant="primary"
+                    variant="ghost"
                     size="lg"
-                    className="bg-white text-brand-700 hover:bg-gray-50 shadow-2xl w-full hover:shadow-glow-lg"
+                    className="!bg-white !text-brand-700 hover:!bg-blue-50 shadow-2xl w-full hover:shadow-glow-lg border-2 border-white"
                   >
                     <Phone className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                     Call {SITE.PHONE}
@@ -110,7 +110,7 @@ export default function HomePage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-2 border-white/30 text-white backdrop-blur-sm hover:bg-white/10 hover:border-white w-full"
+                    className="border-2 !border-white !text-white backdrop-blur-sm hover:!bg-white/20 hover:!border-white w-full"
                   >
                     <MessageSquare className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                     SMS for Quick Quote
@@ -407,7 +407,7 @@ export default function HomePage() {
               viewport={{ once: true }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl blur-xl opacity-5 group-hover:opacity-10 transition-opacity" />
               <div className="relative bg-gradient-to-br from-brand-50 to-white border-2 border-brand-600 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center">
@@ -654,9 +654,9 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={SITE.PHONE_LINK}>
                 <Button
-                  variant="primary"
+                  variant="ghost"
                   size="lg"
-                  className="bg-white text-brand-700 hover:bg-gray-100 hover:scale-105 transition-all w-full shadow-2xl"
+                  className="!bg-white !text-brand-700 hover:!bg-blue-50 hover:scale-105 transition-all w-full shadow-2xl border-2 border-white"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Call {SITE.PHONE}
@@ -666,7 +666,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-brand-700 transition-all w-full shadow-2xl"
+                  className="border-2 !border-white !text-white hover:!bg-white hover:!text-brand-700 transition-all w-full shadow-2xl"
                 >
                   <MessageSquare className="w-5 h-5 mr-2" />
                   SMS {SITE.MOBILE}

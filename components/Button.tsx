@@ -14,7 +14,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-300 focus-ring disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group'
     
     const variants = {
-      primary: 'bg-gradient-to-r from-brand-600 via-brand-700 to-brand-800 text-white hover:shadow-glow hover:scale-105 active:scale-95 before:absolute before:inset-0 before:bg-gradient-shimmer before:bg-[length:200%_100%] hover:before:animate-shimmer',
+      primary: 'bg-gradient-to-r from-brand-600 via-brand-700 to-brand-800 text-white hover:shadow-glow hover:scale-105 active:scale-95 before:absolute before:inset-0 before:bg-gradient-shimmer before:bg-[length:200%_100%] hover:before:animate-shimmer before:pointer-events-none',
       outline: 'border-2 border-brand-600 text-brand-700 hover:bg-gradient-to-r hover:from-brand-50 hover:to-brand-100 hover:border-brand-700 hover:scale-105 active:scale-95 hover:shadow-md',
       ghost: 'text-brand-700 hover:bg-gradient-to-r hover:from-brand-50 hover:to-brand-100 hover:scale-105 active:scale-95',
     }
@@ -34,7 +34,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         transition={{ duration: 0.2 }}
         {...props}
       >
-        {children}
+        <span className="relative z-10 inline-flex items-center justify-center">{children as React.ReactNode}</span>
       </motion.button>
     )
   }
