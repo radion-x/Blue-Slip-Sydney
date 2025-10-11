@@ -1,3 +1,4 @@
 # Blue Slip Sydney
 
-This repository was created programmatically. Initial README.
+Local initial commit for Blue Slip Sydney.
+
