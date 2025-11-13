@@ -162,7 +162,7 @@ export function QuoteForm() {
             <option value="today">Today</option>
             <option value="tomorrow">Tomorrow</option>
             <option value="this-week">This week</option>
-            <option value="flexible">I'm flexible</option>
+            <option value="flexible">I&apos;m flexible</option>
           </select>
         </div>
 
